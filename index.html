@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masoom</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loader">
+      <h3>"Believe</h3>
+      <h3>In</h3>
+      <h3>Your-Self...</h3>
+    </div>
+    <nav class="navbar">
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="./images/home.png" alt="home" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/network.png" alt="network" /><span
+                >My Network</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/jobs.png" alt="Services" /><span
+                >Services</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/message.png" alt="message" /><span
+                >Message</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/notification.png" alt="notification" /><span
+                >Notifications</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            src="./images/user-1.png"
+            alt="user"
+            class="nav-profile"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+
+      <!-- !====================== Profile dorp-down menu =================== -->
+      <div class="profile-menu-wrap" id="profile-opening">
+        <div class="profile">
+          <div class="userinfo">
+            <img src="./images/user-1.png" alt="user" />
+            <div>
+              <h3>Masoom</h3>
+              <a href="#">See your Profile</a>
+            </div>
+          </div>
+          <a href="#" class="profile-link">
+            <img src="./images/feedback.png" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-link">
+            <img src="./images/setting.png" />
+            <p>Setting & Privace</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-link">
+            <img src="./images/help.png" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-link">
+            <img src="./images/display.png" />
+            <p>Display & Accessibility</p>
+            <span>></span>
+          </a>
+          <a href="#" class="profile-link">
+            <img src="./images/logout.png" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ! ================== Navbar End here ======================== -->
+
+    <div class="container">
+      <!--*  =======================  left-sidebar ======================  -->
+      <div class="left-sidebar">
+        <div class="sidebar-profile">
+          <img src="./images/cover-pic.png" alt="cover" width="100%" />
+          <div class="sidebar-profil-info">
+            <a href="#"
+              ><img src="./images/user-1.png" alt="user"
+            /></a>
+            <h1>Masoom</h1>
+            <h3>Software Engineer at Microsoft</h3>
+            <ul>
+              <li>Freelancing Work <span>533</span></li>
+              <li>My Happy Clients <span>3k</span></li>
+              <li>Following Your Work <span>120</span></li>
+            </ul>
+          </div>
+          <div class="item-container">
+            <a href="#"
+              ><img src="./images/items.png" alt="items" /><span
+                >My Items</span
+              ></a
+            >
+            <a href="#"
+              ><img src="./images/premium.png" alt="premium" /><span
+                >My Courses</span
+              ></a
+            >
+          </div>
+        </div>
+
+        <div class="sidebar-activity-container" id="sidebarActivity">
+          <h4>RECENT FREELACE WORK</h4>
+          <a href="#"
+            ><img src="./images/recent.png" alt="recent" />Full Stack Food
+            Dilevery App</a
+          >
+          <a href="#"
+            ><img src="./images/recent.png" alt="recent" />E-Commerce Website</a
+          >
+          <a href="#"
+            ><img src="./images/recent.png" alt="recent" />Chatting Application
+          </a>
+          <a href="#"><img src="./images/recent.png" alt="recent" />AI / ML</a>
+          <a href="#"
+            ><img src="./images/recent.png" alt="recent" />Python Programming</a
+          >
+          <a href="#"
+            ><img src="./images/recent.png" alt="recent" />Software
+            Development</a
+          >
+          <h4>GROUP</h4>
+          <a href="#"
+            ><img src="./images/group.png" alt="group" />Web Design Group</a
+          >
+          <a href="#"
+            ><img src="./images/group.png" alt="group" />Python Group</a
+          >
+          <a href="#"
+            ><img src="./images/group.png" alt="group" />Friend Circle Group</a
+          >
+          <a href="#"
+            ><img src="./images/group.png" alt="group" />Learning Group</a
+          >
+        </div>
+        <div class="discover-container">
+          <a href="#">Discover more</a>
+        </div>
+
+        <p id="showLink" onclick="showActivity()">Show more <b>+</b></p>
+      </div>
+
+      <!--*  =======================  main-content ======================  -->
+
+      <div class="main-content">
+        <div class="post">
+          <a href="#"><img src="./images/user-1.png" alt="user" /></a>
+          <input type="text" placeholder="Let's Have A Chat With Me" />
+        </div>
+        <div class="post-media">
+          <li><input type="text" placeholder="Name" required></li>
+          <li>
+            <input type="email" placeholder="E-mail" required>
+          </li>
+          <li><input type="text" placeholder="Subject" required></li>
+          <li>Send Message</li>
+        </div>
+
+        <div class="sort-by">
+          <hr />
+          <p>
+            Sort by:
+            <span>top <img src="./images/down-arrow.png" alt="sort" /></span>
+          </p>
+        </div>
+
+        <section class="section-bio-data section">
+          <div class="container grid grid-two-column">
+            <div class="bio-data">
+              <h2 class="common-heading">MY Bio-Data</h2>
+              <p class="data">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+                beatae tempore amet non et, numquam officia quos placeat cumque
+                magni assumenda a, libero laudantium iste dicta pariatur?
+                Repellendus, temporibus maiores.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic,
+                asperiores.
+              </p>
+              <div class="bio-data-stats">
+                <div class="bio-stats">
+                  <h3>Design</h3>
+                  <div class="bio-progress-bar">
+                    <span>95%</span>
+                  </div>
+                </div>
+                <div class="bio-stats">
+                  <h3>HTML</h3>
+                  <div class="bio-progress-bar bio-progress-bar-2">
+                    <span>95%</span>
+                  </div>
+                </div>
+                <div class="bio-stats">
+                  <h3>CSS</h3>
+                  <div class="bio-progress-bar bio-progress-bar-3">
+                    <span>90%</span>
+                  </div>
+                </div>
+                <div class="bio-stats">
+                  <h3>JavaScript</h3>
+                  <div class="bio-progress-bar bio-progress-bar-4">
+                    <span>85%</span>
+                  </div>
+                </div>
+                <div class="bio-stats">
+                  <h3>React</h3>
+                  <div class="bio-progress-bar bio-progress-bar-5">
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-work">
+          <div class="grid-four-column grid container">
+            <div>
+              <h2 class="counter-number">2000+</h2>
+              <p>Project Done</p>
+            </div>
+            <div>
+              <h2 class="counter-number">3200+</h2>
+              <p>Happy Clients</p>
+            </div>
+            <div>
+              <h2 class="counter-number">5000+</h2>
+              <p>Project Done</p>
+            </div>
+            <div>
+              <h2 class="counter-number">3000+</h2>
+              <p>Project Done</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="page2">
+          <div class="page2-left">
+            <p>
+              Execlusive Insight into <br />
+              UI/UX and Web Design
+            </p>
+            <p>
+              Execlusive Insight into UI/UX and Web Design Execlusive Insight
+              into UI/UX and Web Design Design An Interface Users Will Trust
+              Design An Interface Users Will Trust
+            </p>
+          </div>
+          <div class="page2-right">
+            <div class="data">
+              <p>How to Design An Interface Users Will Trust In 2024?</p>
+              <img
+                src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+                alt=""
+              />
+              <span>Expand</span>
+            </div>
+            <div class="data">
+              <p>
+                How to Design A Website Which Is Responsive For All The Devices
+                ?
+              </p>
+              <img
+                src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+                alt=""
+              />
+              <span>Expand</span>
+            </div>
+            <div class="data">
+              <p>
+                We're Providing The Best Deal For Making The Web More Attractive
+              </p>
+              <img
+                src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+                alt=""
+              />
+              <span>Expand</span>
+            </div>
+            <div class="data">
+              <p>WebZiee Is Becoming The Most Demanded Product Based Site.</p>
+              <img
+                src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+                alt=""
+              />
+              <span>Expand</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="section section-service">
+          <div class="container">
+            <h2 class="common-heading">Services</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum,
+              magnam rerum voluptatibus provident dicta quisquam adipisci
+              voluptate corporis quidem ipsam nemo molestias inventore.
+            </p>
+          </div>
+          <div class="container grid">
+            <div class="service-box">
+              <ion-icon name="desktop-sharp" class="Serivice-icon"></ion-icon>
+              <h3>Web Design</h3>
+              <p>We're providing the best design for your Website.</p>
+            </div>
+            <div class="service-box">
+              <ion-icon name="logo-react" class="Serivice-icon"></ion-icon>
+              <h3>React</h3>
+              <p>
+                I've 10+ years of Experience in React, I can make production
+                range website
+              </p>
+            </div>
+            <div class="service-box">
+              <ion-icon name="logo-nodejs" class="Serivice-icon"></ion-icon>
+              <h3>Node JS</h3>
+              <p>It is not because things are difficult that we do not dare</p>
+            </div>
+            <div class="service-box">
+              <ion-icon name="logo-javascript" class="Serivice-icon"></ion-icon>
+              <h3>JavaScript</h3>
+              <p>It is not because things are difficult that we do not dare</p>
+            </div>
+            <div class="service-box">
+              <ion-icon name="logo-python" class="Serivice-icon"></ion-icon>
+              <h3>Python</h3>
+              <p>It is not because things are difficult that we do not dare</p>
+            </div>
+            <div class="service-box">
+              <ion-icon name="globe-outline" class="Serivice-icon"></ion-icon>
+              <h3>Connectivity</h3>
+              <p>It is not because things are difficult that we do not dare</p>
+            </div>
+          </div>
+
+          <div class="experience-container">
+          <h3>Experience</h3>
+          <div class="company-info-container">
+            <img src="./images/microsoft.png" height="60px" />
+            <div class="company-info">
+              <h4>Software - Engineer</h4>
+              <h5>Microsoft &middot; Full-time</h5>
+              <h5>Feb 2023 - Present - 1.5 years</h5>
+              <p>
+                Computer programming is the process of performing a particular
+                computation, usually by designing and building an executable
+                computer programme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container">
+          <div class="company-info-container">
+            <img src="./images/google.png" height="60px" />
+            <div class="company-info">
+              <h4>Lead Front-End Developer</h4>
+              <h5>Google &middot; Full-time</h5>
+              <h5>Feb 2021 - Jan 2023 - 2 years</h5>
+              <p>
+                Computer programming is the process of performing a particular
+                computation, usually by designing and building an executable
+                computer programme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-container">
+          <div class="company-info-container">
+            <img src="./images/slack.png" height="60px" />
+            <div class="company-info">
+              <h4>Android - Developer</h4>
+              <h5>Slack &middot; Full-time</h5>
+              <h5>jan 2019 - Dec 2020 - 1.5 years</h5>
+              <p>
+                Computer programming is the process of performing a particular
+                computation, usually by designing and building an executable
+                computer programme.
+              </p>
+            </div>
+          </div>
+        </div>
+
+          
+        </section>
+
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

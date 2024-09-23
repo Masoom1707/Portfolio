@@ -1,0 +1,622 @@
+*{     margin: 0;padding: 0;box-sizing: border-box; font-family:sans-serif;}
+
+body{
+    background: #000000;
+    color: #d3d3d3;
+}
+a{
+    text-decoration: none;
+    color: #eaeaea;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: linear-gradient(to right, #102a94, #1F2833);
+    padding: 7px 4.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.navbar-center ul li{
+    display: inline-block;
+}
+.navbar-center ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 8px;
+    padding-right: 6px;
+    position: relative;
+}
+.navbar-center ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #256eec;
+    bottom: -13px;
+    transition: all 0.3s linear;
+}
+.navbar-center ul li a:hover::after, .navbar-center ul li a.active-link::after{
+    width: 100%;
+}
+.navbar-center img{
+    width: 30px;
+}
+.nav-profile{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+    /* position: relative; */
+}
+.online{
+    position: relative;
+}
+.online::after{
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #12d225;
+    right: 17px;
+    top: 4px;
+}
+/** ================== Navbar Style End here ========================*/
+.container{
+    padding: 20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+/* ! ====================== Left Sidebar ===================== */
+.left-sidebar{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 73px;
+}
+.sidebar-profile{
+    background: linear-gradient(to right, #102a94, #090a0c);
+}
+.sidebar-profil-info{
+    padding: 0 20px;
+}
+.sidebar-profil-info img{
+    width: 80px;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -45px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.sidebar-profil-info h3{
+    font-weight: 500;
+    color: #a8a8a8;
+    margin-bottom: 15px;
+}
+.sidebar-profil-info li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #bdbdbd;
+}
+.sidebar-profil-info li span{
+    color: #1c65e3ce;
+    font-weight: 600;
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #d5d1d1;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+.item-container a{
+    display: flex;
+    align-items: center;
+}
+
+.item-container img{
+    width: 20px;
+    margin-right: 7px;
+}
+
+.sidebar-activity-container{
+    background: linear-gradient(to right, #0b2177, #08090b);
+    margin-top: 15px;
+    padding: 17px 20px;
+    
+}
+.sidebar-activity-container a{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin: 4px 0px;
+    color: #bdbcbc;
+}
+.sidebar-activity-container img{
+    width: 18px;
+    margin-right: 8px;
+}
+.sidebar-activity-container h4{
+    margin: 15px 0;
+    color: #9a9696;
+}
+.discover-container{
+    background: linear-gradient(to right, #102a94, #070808);
+    border-top: 2px solid rgb(200, 196, 196);
+    padding: 15px 20px;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+}
+.discover-container a{
+    color: #1257cf;
+}
+
+
+/* ! ====================== Main Content ===================== */
+.main-content{
+    flex-basis: 73%;
+}
+
+.post{
+    background: linear-gradient(to right, #102a94, #060708);
+    padding: 12px 19px;
+    display: flex;
+}
+.post img{
+    width: 50px;
+    border-radius: 50%;
+}
+.post input{
+    padding: 10px 10px;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: linear-gradient(to right, #162c82e7, #060708);
+}
+.post-media{
+    display: flex;
+    background: linear-gradient(to right, #102a94, #060708);
+    border-top: 2px solid #e4e4e4;
+}
+
+.post-media li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-basis: 25%;
+    border-right: 2px solid #e4e4e4;
+}
+.post-media li input{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+}
+.post-media li:last-child{
+    color: white;
+    border-right: 0;
+    cursor: pointer;
+}
+
+
+.sort-by{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 11px;
+}
+.sort-by hr{
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #0B0C10, #1F2833);
+}
+.sort-by img{
+    width: 12px;
+}
+
+
+/* Bio Data Section Starts Here */
+
+.common-heading{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    /* position: relative; */
+    color: #ebebeb;
+}
+.section{
+    background: linear-gradient(to right, #192b75, #070809);
+
+}
+.data{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.bio-data-stats{
+    display: flex;
+    flex-direction: column;
+    padding: 6.4rem 0;
+    gap: 30px;
+}
+.bio-progress-bar{
+    width: 90%;
+    height: 0.8rem;
+    background-color: #e9e4e4ef;
+    border-radius: 10rem;
+    position: relative;
+}
+.bio-stats h3{
+    margin-bottom: 1rem;
+}
+.bio-progress-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: inherit;
+    background: linear-gradient(to right, #102a94, #07090b);
+    box-shadow: -0.4rem -0.4rem 10px 0 #000000;
+    border-radius: 10rem;
+}
+.bio-progress-bar-2::before{
+    width: 98%;
+}
+.bio-progress-bar-3::before{
+    width: 95%;
+}
+.bio-progress-bar-4::before{
+    width: 85%;
+}
+.bio-progress-bar-5::before{
+    width: 80%;
+}
+.bio-progress-bar span{
+    position: absolute;
+    top: 1.8rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+}
+.bio-progress-bar span{
+    /*! we have to subtract 4 percent in all span data for putting this into the center */
+    left: 91%;  
+}
+.bio-progress-bar-2 span{
+    left: 94%;
+}
+.bio-progress-bar-3 span{
+    left: 91%;
+}
+.bio-progress-bar-4 span{
+    left: 81%;
+}
+.bio-progress-bar-5 span{
+    left: 76%;
+}
+
+    /*! creating a caret */
+   .bio-progress-bar span::before{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: 0.8rem solid #000000;
+    border-color: transparent;
+    border-bottom-color: #000000;
+    top: -1.4rem;
+   } 
+
+
+ /** Our counter Section Starts here **/
+ .grid-four-column{
+     grid-template-columns: repeat(4, 1fr);
+ }
+ 
+ .section-work{
+    background: linear-gradient(to right, #12256e, #05090e);
+     text-align: center;
+     transition: all 0.7s linear;
+     color: white;
+ }
+ .counter-number{
+     font-size: 2.2rem;
+ }
+ .section-work p{
+     color: #fff;
+     text-transform: capitalize;
+ }
+
+
+.page2{
+    background: linear-gradient(to right, #192b75, #060708);
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 2rem;
+}
+.page2-left{
+    flex-basis: 40%;
+    padding: 30px 10px;
+    position: relative;
+}
+.page2-left p:last-child{
+    position: absolute;
+    bottom: 5%;
+    width: 70%;
+}
+.page2-right{
+    flex-basis: 60%;
+    padding: 15px 20px;
+}
+.page2-right .data{
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(90, 90, 90);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.page2-right .data p{
+    width: 60%;
+    margin-bottom: 2vw;
+    font-size: 1.4vw;
+    z-index: 10;
+    
+}
+.data span{
+    font-size: 1vw;
+    font-weight: 600;
+    color: #434343;
+    cursor: pointer;
+}
+.data img{
+    position: absolute;
+    height: 6vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 0;
+    scale: 0;
+}
+
+
+       /** Our Service Section Starts here **/
+    .section-service .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section-service{
+        transition: all 1s linear;
+    }
+    .section-service p{
+        max-width: 60rem;
+    }
+    .section-service .grid{
+        margin-top: 5rem;
+        row-gap: 10rem;
+    }
+    .service-box{
+        text-align: center;
+        box-shadow: -0.3rem 0.6rem 10px 0 #08081d;
+        border-radius: 10px;
+        padding: 2rem 3.4rem;
+        transition: all 0.2s linear;
+        cursor: pointer;
+    }
+    .service-box:hover, .service-box:active{
+        transform: translateY(-3rem);
+    }
+    .Serivice-icon{
+        width: 7rem;
+        height: 7rem;
+        background: linear-gradient(to right, #192b75, #060708);
+        display: inline-block;
+        padding: 1.4rem 1.8rem;
+        position: relative;
+        color: #eae2e2;
+        animation: wave 3s linear infinite;
+    }
+    
+    @keyframes wave{
+        0%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+        }
+        50%{
+        border-radius: 3% 97% 15% 85% / 72% 0% 50% 28%;
+        }
+        100%{
+        border-radius: 56% 44% 70% 30% / 30% 54% 46% 70%;
+        }
+    }
+    
+
+    .service-box p{
+        color: #fff;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+
+
+
+/* @ ================ Profile Drop-Down ==================== */
+.profile-menu-wrap{
+    position: absolute;
+    top: 78%;
+    right: 5%;
+    width: 320px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.profile-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.profile{
+    background: linear-gradient(to right, #192b75b7, #060708b7);
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.userinfo{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1.5px solid #efe8e8;
+
+}
+.userinfo img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.userinfo a{
+    color: #e6dede;
+    margin-top: 3px;
+    font-size: 12px;
+}
+.profile-link{
+    display: flex;
+    align-items: center;
+    /* justify-content:space-between; */
+    margin: 10px 0;
+    color: white;
+}
+.profile-link img{
+    width: 27px;
+    margin-right: 15px;
+}
+.profile-link p{
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+.profile-link span{
+    float: left;
+}
+
+/* * Expirence section */
+.company-info-container{
+    display: flex;
+    margin-bottom: 10px;
+}
+.company-info-container img{
+    margin-top: 15px;
+
+}
+.company-info{
+    margin-left: 10px;
+}
+.company-info h4{
+    margin: 17px 0 5px 0;
+}
+.company-info h5{
+    margin: 0px 0 5px 0;
+}
+.company-info p{
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    margin-top: 15px;
+}
+.experience-container{ border-bottom: 2px solid #ccc; padding: 2vw 2vw;}
+
+.loader{
+    height: 150vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to right, #0a2698, #000000);
+    z-index: 100;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 4vw;
+}
+
+
+/* # ================================== Media query for small screen ======================= */
+@media only screen and (max-width: 600px){
+
+    .navbar-center ul li a span{
+        display: none;
+    }
+    .navbar-center ul li a{
+        padding-right: 0;
+        margin: 2px;
+    }
+    .nav-profile{
+        width: 25px;
+    }
+    .container{
+        padding: 15px 3%;
+    }
+    .left-sidebar{
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+    .main-content{
+        flex-basis: 100%;
+    }
+    .post-stats div{
+        margin: 3px 0;
+    }
+    .profile-main-contnent{
+        flex-basis: 100%;
+    }
+    .about-container p{
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+    .company-info p{
+        font-size: 12px;
+    }
+    #showLink{
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .sidebar-activity-container{
+        display: none;
+    }
+    .sidebar-activity-container.openActivity{
+        display: block;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to right, #11193a, #05090e);
+}
