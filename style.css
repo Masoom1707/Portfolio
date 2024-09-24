@@ -562,24 +562,31 @@ li{
 }
 
 
+
+
+
+
 /* # ================================== Media query for small screen ======================= */
 @media only screen and (max-width: 600px){
 
     .navbar-center ul li a span{
         display: none;
     }
-    .navbar-center ul li a{
+    .navbar{
+        width: 80vh;
+    }
+    /* .navbar-center ul li a{
         padding-right: 0;
         margin: 2px;
-    }
+    } */
     .nav-profile{
-        width: 25px;
+        width: 35px;
     }
     .container{
         padding: 15px 3%;
     }
     .left-sidebar{
-        flex-basis: 100%;
+        flex-grow: 1;
         position: relative;
         top: unset;
     }
